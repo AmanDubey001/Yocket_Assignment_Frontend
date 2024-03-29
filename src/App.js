@@ -8,8 +8,15 @@ import michael from "../src/assets/michael.png";
 import bike from "../src/assets/bike.png"
 import suv from "../src/assets/suv.png"
 import car from "../src/assets/car.png"
+import jane from "../src/assets/jane.png"
 import ChooseCity from './components/ChooseCity.js';
 import Result from './components/Result.js';
+import city_1 from "../src/assets/city_1.png";
+import city_2 from "../src/assets/city_2.png";
+import city_3 from "../src/assets/city_3.png";
+import city_4 from "../src/assets/city_4.png";
+import city_5 from "../src/assets/city_5.png";
+
 
 
 function App() {
@@ -34,7 +41,7 @@ function App() {
       vehicle: "",
       range: "",
       distance: "",
-      image: michael
+      image: jane
     }, {
       id: 2,
       name: "Miachel",
@@ -84,35 +91,35 @@ function App() {
       name: "Yapkashnagar",
       under: "",
       distance: "60",
-      image: bike
+      image: city_1
     },
     {
       id: 1,
       name: "Lihaspur",
       under: "",
       distance: "50",
-      image: bike
+      image: city_2
     },
     {
       id: 2,
       name: "Narmis City",
       under: "",
       distance: "40",
-      image: suv
+      image: city_3
     },
     {
       id: 3,
       name: "Shekharvati",
       under: "",
       distance: "30",
-      image: car
+      image: city_4
     },
     {
       id: 4,
       name: "Nuravgram",
       under: "",
       distance: "20",
-      image: car
+      image: city_5
     },
 
   ])
