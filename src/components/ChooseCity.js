@@ -65,7 +65,8 @@ const ChooseCity = ({ setCurrentPage, copData, setCopData, selectedCop, setSelec
         if (validate()) {
             try {
                 const payload = copData;
-                const res = await axios.post('http://localhost:8000/api/post', payload);
+                const BASE_URL = "https://yocket-assignment-backend-3mw4.onrender.com/";
+                const res = await axios.post(BASE_URL + 'api/post', payload);
                 if (res?.data) {
                     setResult(res?.data?.success);
                     setCurrentPage(4)
