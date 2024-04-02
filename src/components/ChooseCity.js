@@ -28,7 +28,6 @@ const ChooseCity = ({ setCurrentPage, copData, setCopData, selectedCop, setSelec
     }
 
     const handleChooseCity = (index) => {
-        // setSelectedVehicle(index);
         let nums = [...copData];
         if (!nums[selectedCop]["city"]) {
             nums[selectedCop]["city"] = cityData[index]["name"];
@@ -38,7 +37,6 @@ const ChooseCity = ({ setCurrentPage, copData, setCopData, selectedCop, setSelec
             res[index]["under"] = nums[selectedCop]["name"]
             setCityData([...res])
         } else {
-            // let previousVehicle = nums[selectedCop]["vehicle"]
             nums[selectedCop]["city"] = cityData[index]["name"];
             nums[selectedCop]["distance"] = cityData[index]["distance"];
             setCopData([...nums]);
